@@ -1,0 +1,79 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ball-stick-contaner{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ball-stick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: center top;
+}
+
+.ball {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+.ball-stick:first-child {
+  animation: swing 2s linear infinite;
+}
+
+.ball-stick:last-child {
+  animation: swing2 2s linear infinite;
+}
+
+.stick {
+    width: 2px;
+    height: 50px;
+    background-color: gray;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        transform: rotate(70deg);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes swing2 {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: rotate(-70deg);
+        animation-timing-function: ease-in;
+    }
+}

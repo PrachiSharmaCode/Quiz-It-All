@@ -1,0 +1,47 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.qoute-img {
+    width: 25%;
+}
+
+.qoute {
+    text-align: center;
+    font-size: 80px;
+}
+
+.app-description {
+    font-size: 22px;
+    padding: 0 5%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.quiz-choice-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.home-button{
+    width: 25%;
+}
